@@ -27,9 +27,15 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 31
     namespace = "app.mylekha.client.flutter_usb_printer"
-     kotlinOptions {
+          compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
+        targetCompatibility = JavaVersion.VERSION_17  // Use JVM 17 for Java
+    }
+
+ kotlinOptions {
         jvmTarget = "17"
     }
+
 
 
     sourceSets {
